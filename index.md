@@ -1,6 +1,13 @@
 ---
-title: Anders Bryrup - Freelance fullstack developer
+title: Anders Bryrup
+subtitle: Freelance fullstack developer
 ---
+
+### About me
+
+### Work
+
+### Side projects
 
 ### Contact
 
@@ -9,4 +16,3 @@ title: Anders Bryrup - Freelance fullstack developer
 [kontakt@andersbryrup.dk](mailto:kontakt@andersbryrup.dk)
 
 [LinkedIn](https://www.linkedin.com/in/andersbryrup/)
-
