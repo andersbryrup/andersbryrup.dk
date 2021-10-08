@@ -1,7 +1,6 @@
 ---
 title: Anders Bryrup
 subtitle: Freelance fullstack developer
-layout: minimal
 ---
 
 ### About me
