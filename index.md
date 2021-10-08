@@ -1,4 +1,6 @@
-## Anders Bryrup - Freelance fullstack developer
+---
+title: Anders Bryrup - Freelance fullstack developer
+---
 
 ### Contact
 
