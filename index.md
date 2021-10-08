@@ -17,3 +17,5 @@ layout: minimal
 [kontakt@andersbryrup.dk](mailto:kontakt@andersbryrup.dk)
 
 [LinkedIn](https://www.linkedin.com/in/andersbryrup/)
+
+VAT: 34104727
