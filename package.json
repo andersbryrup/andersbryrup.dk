@@ -1,0 +1,19 @@
+{
+  "name": "andersbryrup.dk",
+  "version": "1.0.0",
+  "description": "All about Anders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersbryrup/andersbryrup.dk.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andersbryrup/andersbryrup.dk/issues"
+  },
+  "homepage": "https://github.com/andersbryrup/andersbryrup.dk#readme"
+}
