@@ -7,7 +7,7 @@
 <meta name="description" content="Anders Bryrup giver små og mellemstore virksomheder en erfaren teknisk partner på et fast månedligt abonnement. Udvikling og løbende optimering på dine hjemmesider og applikationer som du prioriterer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="script.js" defer></script>
 <script defer src="https://api.pirsch.io/pa.js"
@@ -18,7 +18,10 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#top" class="logo">Anders Bryrup</a>
+    <a href="#top" class="logo" aria-label="Anders Bryrup">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text"><span class="logo-first">Anders</span><span class="logo-last">Bryrup</span></span>
+    </a>
 
     <nav class="main-nav" id="main-nav" aria-label="Primær navigation">
       <a href="#ydelser">Ydelser</a>
