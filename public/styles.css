@@ -578,7 +578,7 @@ section {
   background: var(--color-bg-alt);
 }
 
-.about-text p {
+.about-text p:not(.eyebrow), .about-text ul {
   color: var(--color-text-muted);
 }
 
