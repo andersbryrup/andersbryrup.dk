@@ -123,29 +123,30 @@ section {
   border-color: var(--color-navy);
 }
 
-/* Extra emphasis for the primary hero CTA: a glowing blue ring */
+/* Extra emphasis for the primary hero CTA: a pulsating blue highlight */
 .btn-glow {
   box-shadow:
-    0 0 0 3px var(--color-accent),
-    0 0 18px 3px rgba(43, 95, 217, 0.55);
-  animation: btn-glow-pulse 2.4s ease-in-out infinite;
-}
-
-@keyframes btn-glow-pulse {
-  0%, 100% {
-    box-shadow:
-      0 0 0 3px var(--color-accent),
-      0 0 16px 3px rgba(43, 95, 217, 0.45);
-  }
-  50% {
-    box-shadow:
-      0 0 0 3px var(--color-accent),
-      0 0 30px 7px rgba(43, 95, 217, 0.8);
-  }
+    0 0 0 2px var(--color-accent),
+    0 0 16px 2px rgba(43, 95, 217, 0.5);
 }
 
 .btn-glow:hover {
-    animation-play-state: paused;
+  animation: btn-glow-pulse 1s ease-out;
+}
+
+@keyframes btn-glow-pulse {
+  0% {
+    box-shadow:
+      0 0 0 2px var(--color-accent),
+      0 0 16px 2px rgba(43, 95, 217, 0.5),
+      0 0 0 0 rgba(43, 95, 217, 0.55);
+  }
+  70%, 100% {
+    box-shadow:
+      0 0 0 2px var(--color-accent),
+      0 0 16px 2px rgba(43, 95, 217, 0.5),
+      0 0 0 16px rgba(43, 95, 217, 0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
