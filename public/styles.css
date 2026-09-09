@@ -123,7 +123,6 @@ section {
   border-color: var(--color-navy);
 }
 
-/* Extra emphasis for the primary hero CTA: a pulsating blue highlight */
 .btn-glow {
   box-shadow:
     0 0 0 2px var(--color-accent),
@@ -131,10 +130,10 @@ section {
 }
 
 .btn-glow:hover {
-  animation: btn-glow-pulse 1s ease-out;
+  animation: btn-glow 1s ease-out;
 }
 
-@keyframes btn-glow-pulse {
+@keyframes btn-glow {
   0% {
     box-shadow:
       0 0 0 2px var(--color-accent),
