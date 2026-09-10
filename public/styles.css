@@ -26,6 +26,10 @@ h1, h2, h3 {
   color: var(--color-navy);
 }
 
+h2 {
+  font-size: 1.7rem;
+}
+
 p {
   margin: 0 0 1em;
 }
@@ -61,6 +65,8 @@ img {
   --color-accent-dark: #1e46ad;
   --color-accent-soft: rgba(43, 95, 217, 0.12);
   --color-border: #e4e7ec;
+  --color-highlight: #f59e0b;
+  --color-highlight-dark: #d97706;
 
   --container-width: 1120px;
   --radius: 8px;
@@ -75,15 +81,6 @@ img {
 
 section {
   padding: clamp(48px, 8vw, 96px) 0;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--color-accent);
-  margin: 0 0 1em;
 }
 
 .section-lead {
@@ -339,6 +336,8 @@ section {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   padding: 28px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -346,20 +345,32 @@ section {
 }
 
 .card-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 1.1em;
-  border-radius: 999px;
-  background: var(--color-accent-soft);
+  position: absolute;
+  top: -11px;
+  right: -39px;
+  z-index: 0;
+  width: 160px;
+  height: 160px;
+  margin: 0;
   color: var(--color-accent);
+  opacity: 0.12;
+  pointer-events: none;
 }
 
 .card-icon svg {
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.card h3,
+.card p {
+  position: relative;
+  z-index: 1;
+  text-shadow:
+    0 0 3px var(--color-bg),
+    0 0 3px var(--color-bg),
+    0 0 6px var(--color-bg),
+    0 0 6px var(--color-bg);
 }
 
 .card h3 {
@@ -452,7 +463,6 @@ section {
 .price-card-featured {
   border-color: var(--color-accent);
   overflow: hidden;
-  box-shadow: 0 12px 28px -16px rgba(16, 27, 45, 0.25);
 }
 
 .price-card-featured::before {
@@ -463,6 +473,21 @@ section {
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark));
+}
+
+.price-card-highlight {
+  border-color: var(--color-highlight);
+  overflow: hidden;
+}
+
+.price-card-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-highlight), var(--color-highlight-dark));
 }
 
 .price-badge {
@@ -557,7 +582,7 @@ section {
   background: var(--color-bg-alt);
 }
 
-.about-text p:not(.eyebrow), .about-text ul {
+.about-text, .about-text ul {
   color: var(--color-text-muted);
 }
 
