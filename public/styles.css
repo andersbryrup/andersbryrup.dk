@@ -320,6 +320,11 @@ section {
   color: var(--color-text-muted);
   max-width: 620px;
 }
+.hero-lead mark {
+  box-shadow: unset;
+  font-weight: 600;
+  color: var(--color-text);
+}
 
 .hero-actions {
   display: flex;
@@ -507,7 +512,7 @@ section {
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-navy);
-  margin-bottom: 0.25em;
+  margin-bottom: 0em;
 }
 
 .price span {
@@ -516,9 +521,20 @@ section {
   color: var(--color-text-muted);
 }
 
+.price-note {
+  font-size: 0.8rem;
+  letter-spacing: 0.02rem;
+  color: var(--color-text-muted);
+}
+
 .price-desc {
   color: var(--color-text-muted);
   font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.price-desc.extra-space {
+  margin-top: 3rem;
 }
 
 .price-card ul {
