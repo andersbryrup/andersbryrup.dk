@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1.9 1.9">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#2b5fd9"/>
-      <stop offset="1" stop-color="#1e46ad"/>
-    </linearGradient>
+    <mask id="m">
+      <rect width="32" height="32" fill="#fff"/>
+      <rect x="-3" y="-3" width="27" height="27" rx="8" fill="#000"/>
+    </mask>
   </defs>
-  <rect x="0" y="0" width="1.15" height="1.15" rx="0.22" fill="#101b2d"/>
-  <rect x="0.75" y="0.75" width="1.15" height="1.15" rx="0.22" fill="url(#g)" style="mix-blend-mode:multiply"/>
+  <rect x="11" y="11" width="21" height="21" rx="5.5" fill="#2b5fd9" mask="url(#m)"/>
+  <rect width="21" height="21" rx="5.5" fill="#101b2d"/>
 </svg>
